@@ -1,0 +1,34 @@
+0、首先请在自己本地安装drupal
+项目使用的是drupal 7!! 请注意!!
+drupal官网: https://www.drupal.org/
+官方安装教程：https://www.drupal.org/docs/7/install
+
+windows平台：
+建议下载安装wamp（http://www.wampserver.com），包含了需要的apache、mysql、php的一个快速安装包，请自行查阅教程并安装
+然后在官网下载drupal 7的安装包，解压到wamps erver的www文件夹下
+开启wamp后浏览器访问localhost:80即可访问到drupal
+
+Ubuntu平台：
+安装lamp
+参考：http://blog.csdn.net/hanshileiai/article/details/54575176
+
+
+参考drupal安装教程，首先创建数据库，再访问localhost:80进行drupal的安装（安装时需要填写数据库名字，填写你创建的数据库名）
+
+
+请先浏览https://www.drupal.org/docs/7理解drupal的运作过程
+例如node、permission的概念
+建议一边阅读一边尝试操作自己安装好的drupal
+以下要掌握的内容
+1、基本操作的学习
+添加删除menu
+添加删除block
+添加删除content type
+添加删除node
+将一个block显示在主界面上
+添加删除module
+（view模块专项）
+2、 安装view模块后
+添加一个view，类型是page（page和block的区别？），专门显示一个content type（用你自己创建的content type试试） #filter的作用
+添加显示的field，自己决定显示什么field
+决定排序顺序（根据field进行排序）
