@@ -1,0 +1,166 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	font-family: Georgia, sans-serif;
+}
+#resule {
+	height: 50px;
+	font-size: 30px;
+}
+#maze {
+	margin: auto;
+	overflow: hidden;
+	height: 360px;
+	width: 600px;
+}
+
+@mixin wheretofloat {
+	float: left;
+}
+
+#wall {
+	background-color: rgb(230, 230, 230);
+}
+#error {
+	background-color: #ff0000;
+}
+.area1 {
+	border: {
+		top: 2px solid black;
+		left: 2px solid black;
+		right: 2px solid black;
+	}
+	height: 58px;
+}
+.area2 {
+	border: {
+		left: 2px solid black;
+		right: 2px solid black;
+	}
+	@include wheretofloat;
+	height: 60px;
+	width: 176px;
+}
+.path3 {
+	border-top: 2px solid black;
+	height: 58px;
+	width: 240px;
+	@include wheretofloat;
+}
+.area3 {
+	@include wheretofloat;
+	height: 118px;
+	width: 176px;
+	border: {
+		left: 2px solid black;
+		right: 2px solid black;
+		bottom: 2px solid black;
+	}
+}
+.path2 {
+	background-color: white;
+	height: 120px;
+	width: 60px;
+	@include wheretofloat;
+}
+.area4 {
+	height: 118px;
+	width: 116px;
+	@include wheretofloat;
+	border: {
+		left: 2px solid black;
+	    right: 2px solid black;
+	    top: 2px solid black;
+	}
+	@include wheretofloat;
+}
+#s {
+	margin: {
+		bottom: 3px;
+	    top: 3px;
+	}
+	height: 48px;
+	width: 48px;
+	background-color: #82fe80;
+	@include wheretofloat;
+	border: {
+		bottom: 2px solid black;
+	    left: 2px solid black;
+		right: 2px solid black;
+		top: 2px solid black;
+	}
+}
+.path1 {
+	height: 58px;
+	width: 188px;
+	background-color: white;
+	@include wheretofloat;
+}
+.area5 {
+	height: 60px;
+	width: 116px;
+	border: {
+		left: 2px solid black;
+		right: 2px solid black;
+	}
+	@include wheretofloat;
+}
+#e {
+	margin: {
+		bottom: 3px;
+		top: 3px;
+	}
+	height: 48px;
+	width: 48px;
+	background-color: #8684fe;
+	float: right;
+	border: {
+		bottom: 2px solid black;
+	    left: 2px solid black;
+	    right: 2px solid black;
+	    top: 2px solid black;
+	}
+}
+.area6 {
+	border: {
+		bottom: 2px solid black;
+	    left: 2px solid black;
+	}
+	height: 56px;
+	width: 240px;
+	@include wheretofloat;
+	border-top: 2px solid black;
+}
+
+.area7 {
+	border-bottom: 2px solid black;
+	height: 58px;
+	width: 116px;
+	@include wheretofloat;
+}
+
+.area8 {
+	border: {
+		bottom: 2px solid black;
+	    right: 2px solid black;
+	}
+	height: 56px;
+	width: 238px;
+	border-top: 2px solid black;
+	@include wheretofloat;
+}
+
+#example {
+	height: 60px;
+	width: 116px;
+	background-color: rgb(230, 230, 230);
+	@include wheretofloat;
+	margin-left: 46%;
+	border: {
+		bottom: 2px solid black;
+		left: 2px solid black;
+		right: 2px solid black;
+		top: 2px solid black;
+	}
+}
