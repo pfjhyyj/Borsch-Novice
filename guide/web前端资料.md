@@ -29,10 +29,10 @@ JS 要深入学习需要比较久的时间，暂时不需要学习到太深的程度。
 
 ### 参考资料来源
 
-经常查阅！！
-W3school:  http://www.w3school.com.cn/
-菜鸟教程:  http://www.runoob.com/
-MDN
+* [W3school](http://www.w3school.com.cn/)
+* [菜鸟教程](http://www.runoob.com/)
+* [MDN](https://developer.mozilla.org/zh-CN/)
+* [CanIuse](http://caniuse.com/)
 
 ### 参考的代码规范
 
