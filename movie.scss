@@ -1,0 +1,148 @@
+
+$fontFamily: Verdana, Tahoma, sans-serif;
+
+body {
+    background-image: url("images/background.png");
+    background-repeat: repeat;
+    font-size: 8pt;
+    font-family: $fontFamily;
+    margin: 0px;
+}
+
+#banner {
+	width: 100%;
+    background-image: url("images/bannerbackground.png"); 
+    background-repeat: repeat-x;
+    height: 50px;
+	img {
+   		display: block;
+    	margin-right: auto;
+	}
+}
+
+h1 {
+	text-align:  center;
+	font-size:  24pt;
+	font-weight: bold;
+	font-family: $fontFamily;
+}
+
+#banner1 {
+	background-image: url("./images/rottenbackground.png");
+	background-repeat: repeat-x;
+}
+
+#banner2 {
+	margin-top:0px;
+	background-repeat: repeat-x;
+	p {
+	    clear:both;
+	    background-color: #A2B964;
+	    text-align: center;
+	    padding: 5px;
+	    margin: 0px;
+	}
+}
+
+#allborder{
+	position: relative;
+	width: 800px;
+	border: 4px solid gray;
+	margin:auto;
+	overflow: hidden;
+	padding-bottom: 0px;
+}
+
+.allboder1 {
+	background-color: #E1D697;
+	border: 2px solid gray;
+	padding: 8px;
+	margin: 0px;
+	p{
+		font-size:8pt;
+		font-weight: bold;
+		font-family: $fontFamily;
+		overflow: hidden;
+		margin: 0px;
+	}
+}
+
+@mixin comment{
+	margin-top: 8px;
+	margin-left: 11px;
+	width: 258.5px;
+	float: left;
+}
+
+#rightcomment {
+	@include comment;
+	margin-right:11px;
+}
+#leftcomment {
+	@include comment;	
+}
+
+#linkcss {
+	float: right;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+#k1 {
+	float:right;
+	margin-bottom:10px;
+}
+
+#k2 {
+	width:250px;
+	float:right;
+	background-color:#A2B964;
+	dl {
+		font-size: 8pt;
+		font-family: Arial, sans-serif;
+		margin-left: 1em;
+		dt {
+			font-weight: bold;
+		}
+		dd {
+			margin-bottom: 5px;
+		}
+	}
+}
+
+img.icon{
+	margin-right: 5px;
+	float: left;
+}
+
+
+.text1 {
+	font-size:48pt;
+	color:red;
+	font-family:$fontFamily;
+	font-weight:bold;
+	vertical-align: top;
+}
+.text2 {
+	font-size:8pt;
+	color:white;
+	font-family:$fontFamily;
+	vertical-align:100%;
+}
+
+.text3{
+	padding-top: 5px;
+	margin-bottom: 3em;
+	p {
+		font-size: 8pt;
+		margin:0px;
+	}
+	img {
+		float: left;
+	}
+}
+
+.text4{
+	font-style:italic;
+}
