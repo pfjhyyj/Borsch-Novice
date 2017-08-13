@@ -1,0 +1,153 @@
+$fontStack: "Hiragino Sans GB", "Microsoft YaHei", "MicrosoftJhengHei";
+$backgroundColor: #2d4259;
+$formBackgroundColor: #fff;
+$box-shadow: 0px 5px 5px rgba(000,000,000,0.1),
+        inset 0px 1px 0px rgba(255,255,255,0.5);
+$text-shadow: 0px 1px 3px rgba(000,000,000,0.3),
+        0px 0px 0px rgba(255,255,255,0);
+
+@mixin border-radius ($border-radius) {
+    -webkit-border-radius:$border-radius;     
+       -moz-border-radius:$border-radius;
+            border-radius:$border-radius;
+}
+
+@mixin box-shadow ($box-shadow) {
+    -webkit-box-shadow:$box-shadow;     
+       -moz-box-shadow:$box-shadow;
+            box-shadow:$box-shadow;
+}
+
+body {
+    background: $backgroundColor;
+    font-family: $fontStack;
+    padding-top: 20px;
+}
+
+h3 {
+	margin: 0 auto;
+}
+
+form {
+    padding: 0px 25px 25px;
+    background: $formBackgroundColor;
+    box-shadow: 
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+        0px 4px 20px rgba( 0,0,0,0.33 );
+    @include border-radius(5px);
+    display: table;
+    position: static;
+
+    .header {
+        margin-bottom: 20px;
+        text-align: center;
+
+        h3 {
+            color: #333333;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            margin-top: 5px;
+        }
+    }
+
+    .sep {
+        height: 1px;
+        background: #e8e8e8;
+        width: 406px;
+        margin: 0px -25px;
+    }
+
+    .inputs {
+        margin-top: 25px;
+
+        #username {
+            background: #f5f5f5;
+            font-size: 0.8rem;
+            @include border-radius(3px);
+            border: none;
+            padding: 13px 10px;
+            width: 330px;
+            margin-bottom: 20px;
+            box-shadow: inset 0px 2px 3px rgba( 0,0,0,0.1 );
+            clear: both;
+
+            &:focus {
+                background: #fff;
+                box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
+                outline: none; 
+            }
+        }
+
+        #id {
+            @extend #username;
+        }
+
+        #phone {
+            @extend #username;
+        }
+
+        #email {
+            @extend #username;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            margin-top: 20px;
+            padding: 15px 0;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-align: center;
+            text-decoration: none;
+            background: -moz-linear-gradient(
+                top,
+                #b9c5dd 0%,
+                #a4b0cb);
+            background: -webkit-gradient(
+                linear, left top, left bottom, 
+                from(#b9c5dd),
+                to(#a4b0cb));
+            @include border-radius(5px);
+            border: 1px solid #737b8d;
+            @include box-shadow($box-shadow);
+            text-shadow: $text-shadow;
+            display: table;
+            position: static;
+            clear: both;
+
+            &:hover {
+                background: -moz-linear-gradient(
+                    top,
+                    #a4b0cb 0%,
+                    #b9c5dd);
+                background: -webkit-gradient(
+                    linear, left top, left bottom, 
+                    from(#a4b0cb),
+                    to(#b9c5dd));
+            }
+        }
+
+        input[type=reset] {
+             @extend input[type=submit];
+        }
+    }
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label .light {
+  font-weight: 300;
+  display: inline;
+}
+
+p {
+    text-align: center;
+    color: red;
+    font-size: 12px;
+    font-weight: 300;
+}
